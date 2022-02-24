@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.action.onClicked.addListener(tab => {
     const url = tab.url;
     var finalUrl = "";
     if (url.match("youtube.com")) {                         // YOUTUBE
